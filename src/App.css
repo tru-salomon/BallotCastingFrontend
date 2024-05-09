@@ -1,42 +1,106 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+.login-background {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(187, 188, 195, 0.876);
+  padding: 20px;
+  border-radius: 32px;
+  border-width: 5px;
+  border-color: black;  
+  width: 713px;
+  color: black;
+  align-items: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  width: 558px;
+  height: 87px;
+  align-self: center;
+  margin: 25px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-title {
+  text-align: center;
+  margin: 35px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.login-title h2,
+.login-title p {
+  margin: 0;
+}
+.login-title p {
+  color: gray;
 }
 
-.card {
-  padding: 2em;
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 455px;
 }
 
-.read-the-docs {
-  color: #888;
+.input-group input {
+  margin-bottom: 25px;
+  width: 455px;
+  height: 37px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border-width: 1pt;
+  border-color: gray;
+  padding-left: 10px;
+
+}
+
+.remember-me-forgot-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 455px;
+  margin-bottom: 25px;
+}
+
+.remember-me-forgot-password .remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me-forgot-password input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.remember-me-forgot-password .forgot-password {
+  text-align: right;
+}
+
+form button {
+  width: 455px;
+  height: 37px;
+  background-color: rgb(0, 106, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 150px;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 65px;
 }
