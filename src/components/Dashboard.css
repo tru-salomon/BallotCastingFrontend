@@ -1,7 +1,7 @@
 /* dashboard.css */
 
 .dashboard-container {
-    background-color: #f0f0f0;
+    background-color: #e8e5e5;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -29,20 +29,21 @@
 .sidebar-nav-items {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 35px;
     height: 252px;
     width: 216px;
 }
+
 .sidebar-nav-items a {
     text-decoration: none;
-    color: gray;
+    color: grey;
 }
 
 .sidebar-nav-items i {
-    color: gray;
+    color: grey;
     margin-right: 10px;
 }
 
@@ -55,9 +56,34 @@
     cursor: pointer;
 }
 
+.nav-item:hover {
+    border: 1px solid blue;
+    background-color: #e8e5e5;
+}
+
+.nav-item:hover a {
+    color: black;
+}
+
+.nav-item:hover i {
+    color: blue;
+}
+
+.active a {
+    color: black;
+}
+
+.active i {
+    color: blue;
+}
+
+.active {
+    background-color: #e8e5e5;
+    border: 1px solid blue;
+}
+
 .sidebar-nav-items input {
     background-color: #f0f0f0;
     border: none;
     color: black;
 }
-
