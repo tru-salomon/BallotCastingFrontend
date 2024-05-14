@@ -1,6 +1,6 @@
 import background from '../assets/01 1.png'
 import logo from '../assets/BCS LOGO.png'
-
+import './Login.css'
 const login = () => {
     return (
         <div className="login-background" style={{ backgroundImage: `url(${background})` }}>
