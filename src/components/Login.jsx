@@ -1,7 +1,13 @@
 import background from '../assets/01 1.png'
 import logo from '../assets/BCS LOGO.png'
 import './Login.css'
+
+
 const login = () => {
+
+
+
+
     return (
         <div className="login-background" style={{ backgroundImage: `url(${background})` }}>
             <form className="login-form">
@@ -11,8 +17,8 @@ const login = () => {
                     <p>Sign in to continue</p>
                 </div>
                 <div className='input-group'>
-                    <input type="email" placeholder="Enter your email" required autoComplete="email" />
-                    <input type="password" placeholder="**********" required autoComplete="current-password" />
+                    <input type="email" placeholder="  Enter your email" required autoComplete="email" />
+                    <input type="password" placeholder="  **********" required autoComplete="current-password" />
                 </div>
                 <div className="remember-me-forgot-password">
                     <div className="remember-me">

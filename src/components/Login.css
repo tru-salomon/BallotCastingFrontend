@@ -16,22 +16,23 @@
     border-radius: 32px;
     border-width: 5px;
     border-color: black;
-    width: 55vw;
-    height: 90vh;
+    width: 33vw;
+    height: 85vh;
     color: black;
     align-items: center;
+    overflow: auto;
 }
 
 .logo {
-    width: 558px;
-    height: 87px;
+    width:84%;
+    height: 10%;
     align-self: center;
-    margin: 25px;
+    padding-top: 10%;
 }
 
 .login-title {
     text-align: center;
-    margin: 35px;
+    margin: 5%;
 }
 
 .login-title h2,
@@ -44,30 +45,31 @@
 }
 
 .input-group {
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
-    width: 455px;
+    width: 70%;
+    height: 25%;
+    gap: 25%;
+    /* height: fit-content; */
 }
 
 .input-group input {
-    margin-bottom: 25px;
-    width: 455px;
-    height: 37px;
+    width: 95%;
+    height: 25%;
     background-color: white;
     color: black;
     border-radius: 5px;
-    border-width: 1pt;
-    border-color: gray;
-    padding-left: 10px;
-
+    border: 1pt solid #ccc;
+    align-self: center;
 }
 
 .remember-me-forgot-password {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 455px;
-    margin-bottom: 25px;
+    width: 70%;
+    padding-bottom: 5%;
 }
 
 .remember-me-forgot-password .remember-me {
@@ -88,7 +90,7 @@
 }
 
 form button {
-    width: 455px;
+    width: 69%;
     height: 37px;
     background-color: rgb(0, 106, 255);
     color: white;

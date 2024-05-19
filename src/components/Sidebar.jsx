@@ -1,5 +1,6 @@
 import logo from '../assets/BCS LOGO.png';
-import { useState } from 'react';
+import { useState, useContext, useRef, useLayoutEffect } from 'react';
+import HeightContext from './utils/HeightContext';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -9,23 +10,29 @@ const Sidebar = () => {
         setActiveItem(path);
     }
 
-    // const handleNewCallClick = () => {
-    //   console.log("you started a new call")
-    // }
+  
+  const { setHeight } = useContext(HeightContext);
+  const sidebarHeaderRef = useRef(null);
+
+  useLayoutEffect(() => {
+    if (sidebarHeaderRef.current) {
+      setHeight(sidebarHeaderRef.current.getBoundingClientRect().height);
+    }
+  }, [setHeight]);
 
     return (
         <>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       <div className="sidebar-container">
         <div className="sidebar">
-          <div className='sidebar-header'>
+          <div ref={sidebarHeaderRef} className='sidebar-header'>
             <img src={logo} alt="logo" />
             </div>
-          <div className='sidebar-nav-items'>
-            <div className='nav-item'>
+            <div className='nav-item-one'>
               <input type="text" placeholder="start new call" />
-             <a href="/newcall"><i className="fa fa-fw fa-plus plus"></i></a>
+              <a className='plus' href="/newcall"><i className="fa fa-fw fa-plus"></i></a>
             </div>
+          <div className='sidebar-nav-items'>
             <div className={`nav-item ${activeItem === '/dashboard' ? 'active' : ''}`} onClick={() => handleNavItemClick('/dashboard')}>
               <a href="/dashboard"><i className="fa fa-fw fa-home"></i>Dashboard</a>
             </div>

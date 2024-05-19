@@ -1,30 +1,47 @@
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    width: 248px;
-    height: 765px;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 75%;
     background-color: #ffffff;
     border: 1px solid #e5e8eb;
+    border-top: none;
+    border-left: none;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    border-bottom: 1px solid #e5e8eb;
 }
 
 .sidebar-header img {
-    width: 248px;
-    height: 40px;
-    padding-top: 13px;
-    padding-bottom: 10px;
-    margin-bottom: 13px;
-    border-bottom: 1px solid #e5e8eb;
+    width: 100%;
+    height: 75%;
+    align-self: center;
 }
 
 .sidebar-nav-items {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-left: 20px;
-    margin-right: 12px;
-    margin-top: 35px;
-    height: 252px;
-    width: 216px;
+    gap: 2px;
+    padding-left: 5%;
+    padding-right: 3%;
+    height: 40%;
+    width: 92%;
 }
 
 .sidebar-nav-items a {
@@ -39,12 +56,31 @@
 
 .nav-item {
     display: flex;
-    gap: 10px;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
-    height: 40px;
+    height: 15%;
+    width: 85%;
+}
+
+.nav-item-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9%;
+    padding-left: 5%;
+    padding-right: 4%;
+    border-radius: 5px;
+    gap: 5px;
+    cursor: pointer;
+    height: 5%;
+    width: 85%;
+}
+
+.nav-item-one:hover input {
+    border: 1px solid blue;
+    background-color: #e8e5e5;
 }
 
 .nav-item:hover {
@@ -77,17 +113,29 @@
     background-color: #ffffff;
     border: none;
     color: black;
-    width: 165px;
+    width: 100%;
     height: 25px;
+}
+
+.nav-item-one input {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    width: 100%;
+    height: 25px;
+}
+
+.nav-item-one i {
+    color: grey;
 }
 
 .lower-sidebar {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 12px;
-    width: 216px;
-    height: 333px;
+    padding-left: 5%;
+    padding-right: 3%;
+    width: 92%;
+    height: 45%;
     border-bottom: 1px solid #e5e8eb;
 }
 
@@ -125,7 +173,7 @@
 }
 
 .empty {
-    height: 262px
+    height: 78.7%;
 }
 
 .plus {
@@ -134,36 +182,33 @@
     background-color: #ffffff;
     border: 1px solid #e5e8eb;
     cursor: pointer;
-    margin-right: none;
+    padding: 2px 0px;
+    margin: none;
 }
 
 .account-info-container {
     display: flex;
-    height: 62px;
     flex-direction: row;
-    gap: 10px;
-    padding-left: 20px;
-    padding-right: 13px;
-    padding-top: 2px;
-    padding-bottom: 8px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    gap: 5%;
 }
 
 .avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    vertical-align: middle;
-    align-self: center;
+    width: 15%;
+    height: 85%
 }
 
 .account-name {
-    padding-top: 5px;
-    font-size: 12pt;
-    font-style: bold;
+    flex: 1;
+    font-size: 95%;
+    font-weight: bold;
 }
 
 .account-email {
-    padding-top: 5px;
-    font-size: 10pt;
+    flex: 1;
+    font-size: 75%;
     color: grey;
+    overflow: auto;
 }
