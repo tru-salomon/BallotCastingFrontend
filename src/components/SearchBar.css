@@ -21,14 +21,6 @@
     width: 65%;
 }
 
-.searchbar-input-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 25%;
-    height: max-content;
-}
 
 .searchbar-input-container input {
     width: 80%;
@@ -36,6 +28,8 @@
     background-color: #ffffff;
     border: 1px solid #e5e8eb;
     padding-left: 10px;
+    border-radius: 5px;
+    color: black;
 }
 
 .searchbar-input-container {
@@ -44,4 +38,19 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 20%;
+}
+
+.searchbar-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.searchbar-icons-container i {
+    color: grey;
+}
+
+.searchbar-icons-container i:hover {
+    color: black;
 }
