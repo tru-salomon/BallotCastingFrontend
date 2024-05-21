@@ -11,7 +11,7 @@ const SearchBar = () => {
       const header = document.querySelector('.sidebar-header');
       if (header && containerRef.current) {
         const exactHeight = header.getBoundingClientRect().height;
-        containerRef.current.style.height = `${exactHeight - 1}px`;
+        containerRef.current.style.height = `${exactHeight}px`;
       }
     };
     
