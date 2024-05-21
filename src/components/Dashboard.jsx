@@ -24,7 +24,12 @@ const Dashboard = () => {
                               <div className='result-feed-container'>
                                     <div className='feed-title'>Current Call Preliminary Results</div>
                                     <div className='result-container'>
-                                          <div className='cell-title-container'></div>
+                                          <div className='cell-title-container'>
+                                                <div className='cell-rank'>Ranking</div>
+                                                <div className='cell-name'>Name</div>
+                                                <div className='cell-vote-count'>Vote Count</div>
+
+                                          </div>
                                     </div>
 
                               </div>
