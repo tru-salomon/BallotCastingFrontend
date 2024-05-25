@@ -1,4 +1,6 @@
 import './Dashboard.css';
+import Columnchart from './Columnchart';
+// import Piechart from './Piechart';
 
 const Dashboard = () => {
       return (
@@ -10,12 +12,16 @@ const Dashboard = () => {
                               <div className='data-visualization'>
                                     <div className='bar-chart-container'>
                                           <div className='chart-title'>Ballots</div>
-                                          <div className='chart-container'></div>
+                                          <div className='chart-container'>
+                                                <Columnchart />
+                                          </div>
                                     </div>
 
                                     <div className='pie-chart-container'>
                                           <div className='chart-title'>Turnout</div>
-                                          <div className='chart-container'></div>
+                                          <div className='chart-container'>
+                                                {/* <Piechart /> */}
+                                          </div>
                                     </div>
                               </div>
                         </div>
@@ -28,7 +34,6 @@ const Dashboard = () => {
                                                 <div className='cell-rank'>Ranking</div>
                                                 <div className='cell-name'>Name</div>
                                                 <div className='cell-vote-count'>Vote Count</div>
-
                                           </div>
                                     </div>
 
