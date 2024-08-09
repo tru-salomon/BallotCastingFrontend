@@ -1,6 +1,8 @@
 import './Dashboard.css';
 import Columnchart from './Columnchart';
-// import Piechart from './Piechart';
+import Piechart from './Piechart';
+import ResultGrid from './ResultGrid';
+
 
 const Dashboard = () => {
       return (
@@ -20,7 +22,7 @@ const Dashboard = () => {
                                     <div className='pie-chart-container'>
                                           <div className='chart-title'>Turnout</div>
                                           <div className='chart-container'>
-                                                {/* <Piechart /> */}
+                                                <Piechart />
                                           </div>
                                     </div>
                               </div>
@@ -30,11 +32,7 @@ const Dashboard = () => {
                               <div className='result-feed-container'>
                                     <div className='feed-title'>Current Call Preliminary Results</div>
                                     <div className='result-container'>
-                                          <div className='cell-title-container'>
-                                                <div className='cell-rank'>Ranking</div>
-                                                <div className='cell-name'>Name</div>
-                                                <div className='cell-vote-count'>Vote Count</div>
-                                          </div>
+                                          <ResultGrid />
                                     </div>
 
                               </div>

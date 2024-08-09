@@ -1,6 +1,7 @@
 import background from '../assets/01 1.png'
 import logo from '../assets/BCS LOGO.png'
 import './Login.css'
+import { GoogleLogin } from '@react-oauth/google'
 
 
 const login = () => {
@@ -28,6 +29,14 @@ const login = () => {
                     <a href="/forgot-password" className="forgot-password">Forgot password?</a>
                 </div>
                 <button type="submit">Sign In</button>
+                <GoogleLogin
+                    onSuccess={credentialResponse => {
+                        console.log(credentialResponse);
+                    }}
+                    onError={() => {
+                        console.log('Login Failed');
+                    }}
+                />
                 <div className='signup'>
                     <p>Don&apos;t have an account? <a href="/signup">Request an account here!</a></p>
                 </div>
